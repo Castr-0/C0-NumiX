@@ -402,3 +402,114 @@ display:none;
 }
 
 }
+
+
+/* =======================
+ANIMAÇÕES
+======================= */
+
+.hidden{
+
+opacity:0;
+
+transform:translateY(40px);
+
+transition:.8s;
+
+}
+
+.show{
+
+opacity:1;
+
+transform:translateY(0);
+
+}
+
+/* =======================
+LIGHTBOX
+======================= */
+
+#lightbox{
+
+position:fixed;
+
+top:0;
+
+left:0;
+
+width:100%;
+
+height:100%;
+
+background:rgba(0,0,0,.9);
+
+display:none;
+
+justify-content:center;
+
+align-items:center;
+
+z-index:99999;
+
+}
+
+#lightbox.active{
+
+display:flex;
+
+}
+
+#lightbox img{
+
+max-width:90%;
+
+max-height:90%;
+
+border-radius:20px;
+
+}
+
+/* =======================
+BOTÃO TOPO
+======================= */
+
+#topButton{
+
+position:fixed;
+
+bottom:30px;
+
+right:30px;
+
+width:55px;
+
+height:55px;
+
+border:none;
+
+border-radius:50%;
+
+background:#111;
+
+color:white;
+
+font-size:24px;
+
+cursor:pointer;
+
+opacity:0;
+
+pointer-events:none;
+
+transition:.3s;
+
+}
+
+.showButton{
+
+opacity:1 !important;
+
+pointer-events:auto !important;
+
+}
